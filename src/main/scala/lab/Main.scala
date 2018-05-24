@@ -12,8 +12,9 @@ object Main {
     result
   }
 
-  def stringToInt(list: List[String]): Int = {
-    list.foldLeft(0)(_ + _.toInt)
+  def stringToInt(list: List[String]): List[Int] = {
+    list.map(_.toString.toInt)
+    /**list.foldLeft(0)(_ + _.toInt) */
   }
 
   def split(list: List[String]): List[Char] = {
